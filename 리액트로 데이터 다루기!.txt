@@ -13,6 +13,3 @@
 
 1. prettier 설치 
 2. 설정에서 format 검색 default fommatter를 prettier로 설정 후 Format On Save 옵션 on
-
-
-dddddddd
