@@ -12,4 +12,4 @@
 저장할때마다 코드 정리 
 
 1. prettier 설치 
-2. 설정에서 format 검색 default fommatter를 prettier로 설정 후 Format On Save 옵션 onn
+2. 설정에서 format 검색 default fommatter를 prettier로 설정 후 Format On Save 옵션 onn 111ssss
