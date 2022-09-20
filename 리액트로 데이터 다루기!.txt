@@ -1,0 +1,15 @@
+리액트로 데이터 다루기!!!
+
+단축키
+1. 멀티 커서 선택하기 (Ctrl + Shift + L)
+2. 직접 멀티 커서 만들기 (Alt + 클릭)
+3. 찾아 바꾸기 (F2)
+4. 해당하는 파일로 이동 (Ctrl + 클릭)
+5. 줄 이동 (Alt 위아래)
+6. 줄 복사 (Alt + Shift + 위아래)
+
+
+저장할때마다 코드 정리 
+
+1. prettier 설치 
+2. 설정에서 format 검색 default fommatter를 prettier로 설정 후 Format On Save 옵션 onn
