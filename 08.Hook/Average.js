@@ -1,3 +1,14 @@
+/*
+  ※ useMemo
+   - 함수 컴포넌트 내부에서 발생하는 연산은 최적화할 수 있다.
+
+  ※ useCallBack
+   - 렌더링 성능 최적화시 사용 (만들어놨던 함수를 재사용) 
+
+  ※ useRef 
+   - 함수 컴포넌트에서 ref를 쉽게 사용할 수 있도록 함 
+*/
+
 import { useCallback, useMemo, useState, useRef } from "react";
 
 const getAverage = (numbers) => {
@@ -11,7 +22,7 @@ const Average = () => {
   const [list, setList] = useState([]);
   const [number, setNumber] = useState("");
 
-  // useRef Hook, dom에서 ref를 이용해 설정하면 current값이 실제 엘리먼트를 가리킨다.
+  // useRef Hook, dom에서 ref를 이용해 설정하면 current값이 실제 엘리먼트를 가리킨다. 여기서는 input element
   const inputEl = useRef(null);
 
   //onChange가 일어날때도 getAverage를 탐
@@ -41,7 +52,7 @@ const Average = () => {
     [number, list]
   ); //number 혹은 list가 바뀌었을 때만 함수 생성
 
-  //useMemo를 사용하면 list배열에 변경이 일어났을 때만 getAverage 함수 호출
+  //useMemo를 사용하면 list배열에 변경이 일어났을 때만 getAverage 함수 호출, 두번째 인자에 [list]를 넣어주면 list변경이 일어났을 때만
   const avg = useMemo(() => getAverage(list), [list]);
 
   return (

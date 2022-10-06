@@ -2,6 +2,7 @@
    1. 이벤트 이름은 카멜 표기법으로 작성
    2. 이벤트에 실행할 자바스크립트 코드를 전달하는 것이 아니라, 함수형태의 값을 전달
    3. DOM 요소에만 이벤트를 설정가능
+   4. https://facebook.github.io/react/docs/events.html
 */
 
 // import { Component } from "react";
@@ -81,6 +82,7 @@
 // class EventPractice extends Component {
 //   state = { message: "", username: "" };
 
+// 화살표함수에는 this라는 변수자체가 존재하지 않으므로 상위환경에서의 this를 바라봄
 //   handleChange = (e) => {
 //     this.setState({ [e.target.name]: e.target.value });
 //   };
@@ -129,6 +131,7 @@ import { useState } from "react";
 const EventPractice = () => {
   const [form, setForm] = useState({ username: "", message: "" });
 
+  //비구조화 할당
   const { username, message } = form;
 
   const onChange = (e) => {

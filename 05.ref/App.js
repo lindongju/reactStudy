@@ -1,3 +1,11 @@
+// import ValidationSample from "./ValidationSample";
+
+// const App = () => {
+//   return <ValidationSample />;
+// };
+
+// export default App;
+
 import { Component } from "react";
 import ScrollBox from "./ScrollBox";
 
@@ -10,7 +18,8 @@ class App extends Component {
         }
         <ScrollBox ref={(ref) => (this.scrollBox = ref)}></ScrollBox>
         {
-          // 버튼을 누를 때 값을 읽어와서 실행
+          // 버튼을 누를 때 ScorollBox컴포넌트의 scrollToBottom 함수를 실행 
+
         }
         <button onClick={() => this.scrollBox.scrollToBottom()}>
           맨 밑으로

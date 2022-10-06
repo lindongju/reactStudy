@@ -1,3 +1,15 @@
+/* 
+  프로젝트에서 반복적인 내용을 효율적으로 보여주고 관리하는 방법
+*/
+
+/*
+  const IterationSample = () => {
+    const names = ['눈사람', '얼음', '눈', '바람'];
+    const nameList = names.map((name, index) => <li key = {index}>{name}</li>);
+    return <ul>{nameList}</ul>
+  }
+*/
+
 import { useState } from "react";
 
 const IterationSample = () => {

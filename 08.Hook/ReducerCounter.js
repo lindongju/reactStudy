@@ -22,6 +22,7 @@ const ReducerCounter = () => {
       <p>
         현재 카운터 값은 <b>{state.value}</b>입니다.
       </p>
+      {/* dispatch(action) */}
       <button onClick={() => dispatch({ type: "INCREMENT" })}>+1</button>
       <button onClick={() => dispatch({ type: "DECREMENT" })}>-1</button>
     </div>

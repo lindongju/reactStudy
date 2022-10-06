@@ -1,3 +1,7 @@
+/*
+  ※ useEffect 
+   - 리액트 컴포넌트가 렌더링될 때마다 특정 작업을 수행하도록 설정할 수 있는 Hook (ComponentDidMount와 ComponentDidUpdate를 합친 형태)
+*/
 import { useState, useEffect } from "react";
 
 // 여러개 상태를 관리해야할때는 여러개의 state를 사용
