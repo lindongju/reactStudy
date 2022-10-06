@@ -1,14 +1,21 @@
-import React from 'react';
 import {
   MdCheckBoxOutlineBlank,
   MdCheckBox,
   MdRemoveCircleOutline,
 } from 'react-icons/md';
 import './TodoListItem.scss';
-import cn from 'classnames'; //???
+import cn from 'classnames';
+import React, { useCallback } from 'react';
 
 const TodoListItem = ({ todo, onRemove, onToggle, style }) => {
   const { id, text, checked } = todo;
+
+  const onClick = useCallback(
+    (e) => {
+      onRemove(id);
+    },
+    [onRemove, id],
+  );
 
   return (
     <div className="TodoListItem-virtualized" style={style}>
@@ -20,7 +27,7 @@ const TodoListItem = ({ todo, onRemove, onToggle, style }) => {
           {checked ? <MdCheckBox /> : <MdCheckBoxOutlineBlank />}
           <div className="text">{text}</div>
         </div>
-        <div className="remove" onClick={() => onRemove(id)}>
+        <div className="remove" onClick={onClick}>
           <MdRemoveCircleOutline />
         </div>
       </div>
@@ -28,5 +35,5 @@ const TodoListItem = ({ todo, onRemove, onToggle, style }) => {
   );
 };
 
-//React.memo를 붙임으로써 todo, onRemove, onToggle이 바뀌지 않으면 리렌더링 하지 않음
+//React.memo라는 함수를 사용 (컴포넌트의 props가 바뀌지 않았다면 리렌더링 X)
 export default React.memo(TodoListItem);

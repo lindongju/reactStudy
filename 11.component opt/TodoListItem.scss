@@ -24,14 +24,14 @@
       margin-left: 0.5rem;
       flex: 1;
     }
-    //checked가 true일 경우
+
     &.checked {
       svg {
         color: #22b8cf;
       }
       .text {
-        color: #22b8cf;
-        text-decoration: line-through; //가운데 작대기 생성
+        color: #adb5ba;
+        text-decoration: line-through;
       }
     }
   }
