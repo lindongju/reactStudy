@@ -1,0 +1,4 @@
+react-virtualized를 이용해 스크롤 되기전에는 렌더링 X
+
+yarn add react-virtualized
+
